@@ -1,0 +1,113 @@
+html {
+  background-color: #233d4d;
+}
+
+body {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", cursive;
+  color: #fcca46;
+}
+
+h1 {
+  color: #fe7f2d;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p,
+li,
+.footer {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 10fr 0.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav"
+    "maincontent"
+    "footer";
+}
+
+.nav {
+  grid-area: nav;
+  margin-top: 36px;
+  margin-left: 115px;
+  margin-right: 115px;
+}
+
+.nav ul {
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.nav li a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px;
+  padding: 16px;
+  color: #ffffff;
+  margin: 8px;
+  display: inline;
+  float: right;
+}
+
+.nav li a:hover {
+  background-color: #619b8a;
+  text-decoration: underline;
+  color: white;
+  padding: 16px;
+  display: inline;
+}
+
+.maincontent {
+  grid-area: maincontent;
+  margin-left: 115px;
+  margin-right: 115px;
+}
+
+.maincontent a {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+.maincontent a:hover {
+  color: #619b8a;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #619b8a;
+  padding: 16px;
+  margin: 0;
+  margin-top: 72px;
+}
