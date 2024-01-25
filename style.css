@@ -77,11 +77,11 @@ li,
   margin: 8px;
   display: inline;
   float: right;
+  text-decoration: none;
 }
 
 .nav li a:hover {
   background-color: #619b8a;
-  text-decoration: underline;
   color: white;
   padding: 16px;
   display: inline;
@@ -110,4 +110,19 @@ li,
   padding: 16px;
   margin: 0;
   margin-top: 72px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .nav {
+    grid-area: nav;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .maincontent {
+    grid-area: maincontent;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
