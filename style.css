@@ -44,7 +44,7 @@ table {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 10fr 0.5fr;
+  grid-template-rows: 0.2fr 16fr 0.2fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -86,6 +86,23 @@ table {
   display: inline;
 }
 
+button {
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px;
+  padding: 16px;
+  color: #ffffff;
+  background-color: #a1c181;
+  border: none;
+}
+
+button:hover {
+  background-color: #619b8a;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 .maincontent {
   grid-area: maincontent;
   margin-left: 115px;
@@ -118,6 +135,12 @@ td {
   border-collapse: collapse;
   text-align: left;
   padding: 1%;
+}
+
+figcaption {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1020px) {
