@@ -156,4 +156,8 @@ figcaption {
     margin-left: 60px;
     margin-right: 60px;
   }
+
+  button {
+    width: 100%;
+  }
 }
